@@ -1,0 +1,12 @@
+PS: 使用自定义版的pyutils库，地址为：https://github.com/meicale/pyutility, 下面的修改在自己的版本库中进行了修改，如果上游变化，可以自行修改。
+0. tensorflow-gpu 替换为tensorflow
+1. pytorch-onn 需要依赖cairo，可以手动安装命令为：sudo apt install libcairo2-dev， 参考链接：https://github.com/pygobject/pycairo/issues/89
+这个目前没有复现，应该也可以不用安装。
+
+2. 报错：  ModuleNotFoundError: No module named 'multimethod'
+解决方法： pip install multimethod
+3. 报错：ModuleNotFoundError: No module named 'scienceplots'
+解决方法： pip install SciencePlots
+4. python3 setup.py install --user clean # 可能会卡死，
+解决方法：原因是需要联网，使用科学上网pc 解决
+
